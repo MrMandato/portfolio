@@ -57,3 +57,9 @@
 .footer-button-container:hover button > a {
   color: #fff;
 }
+
+.slide-in-left-view {
+  animation: slideInLeftView linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 25%;
+}

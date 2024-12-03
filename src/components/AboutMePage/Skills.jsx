@@ -32,7 +32,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="tools-container scroll-anim-izq">
+      <div className="tools-container slide-in-bottom-view">
         <Tool
           icon="code"
           profession="Desarrollador Front-End"

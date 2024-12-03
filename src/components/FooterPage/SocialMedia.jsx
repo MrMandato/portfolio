@@ -19,7 +19,7 @@ const SocialMedia = () => {
     <>
       <aside className="social-media-container">
         <h2 className="scroll-anim">Mis Redes Sociales</h2>
-        <div className="my-social-media scroll-anim">
+        <div className="my-social-media slide-in-bottom-view">
           <SocialItem iconNames={icons} link={links} />
         </div>
         <FooterButton />

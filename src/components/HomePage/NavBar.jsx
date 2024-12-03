@@ -7,10 +7,10 @@ const NavBar = () => {
   return (
     <>
       <header id="home" className="container">
-        <a href="#" className="logo-container first-reveal-bot">
+        <a href="#" className="logo-container slide-in-top">
           <img src={images.Isologo} alt="Isologo" />
         </a>
-        <nav className="navbar-container first-reveal-bot">
+        <nav className="navbar-container slide-in-left">
           <a href="#home">
             <button className="btn"> Inicio</button>
           </a>

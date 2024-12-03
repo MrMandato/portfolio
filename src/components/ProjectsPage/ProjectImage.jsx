@@ -12,7 +12,7 @@ const ProjectImage = ({ projectList, descriptions }) => {
         {projectList.map((project, index) => {
           return (
             <>
-              <div className="image-container scroll-anim">
+              <div className="image-container slide-in-top-view">
                 <img key={index} src={images[project]} />
                 <div className="overlay">
                   <p> {descriptions[index]} </p>

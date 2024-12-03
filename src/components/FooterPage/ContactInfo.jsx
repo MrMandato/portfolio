@@ -16,10 +16,10 @@ const ContactInfo = () => {
   return (
     <>
       <footer id="contact" className="footer-container">
-        <h2 className="scroll-anim-izq">
+        <h2 className="slide-in-right-view">
           Contactame para hacer realidad tus ideas
         </h2>
-        <div className="personal-information scroll-anim">
+        <div className="personal-information zoom-in">
           <picture className="images-container">
             <img src={images.Logo} />
           </picture>

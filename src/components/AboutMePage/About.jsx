@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <section id="about" className="about-container">
-        <div className="welcome-container scroll-anim">
+        <div className="welcome-container slide-in-bottom-view">
           <h2>Bienvenid@</h2>
           <p>
             Soy Orlando López, Tengo 18 años y estoy estudiando ingeniería

@@ -27,7 +27,7 @@ const TestimonialItem = ({ testimonials, person, feedback }) => {
             delay: 2500,
             disableOnInteraction: true,
           }}
-          className="mySwiper scroll-anim"
+          className="mySwiper slide-in-bottom-view"
         >
           {testimonials.map((avatar, index) => {
             return (

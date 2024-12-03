@@ -12,7 +12,7 @@ const Languages = () => {
     <>
       <div className="languages-container">
         <h2>Lenguajes, Librerías y Frameworks que uso</h2>
-        <div className="item-container scroll-anim-izq">
+        <div className="item-container slide-in-left-view">
           {ProgrammingLanguages.map((language, index) => (
             <LanguageItem
               key={index}
