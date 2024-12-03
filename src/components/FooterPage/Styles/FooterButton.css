@@ -1,0 +1,59 @@
+.footer-button-container {
+  position: relative;
+  display: flex;
+  background-color: #291838;
+  align-items: center;
+  justify-content: center;
+  margin: 0 600px;
+  gap: 40px;
+  top: 42px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.footer-button-container > p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.footer-button-container > button {
+  background-color: #fff;
+  border: 2px solid #222;
+  padding: 12px 40px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.footer-button-container > button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #4d73dc;
+  z-index: -1;
+  transition: all 1s ease;
+}
+
+.footer-button-container > button:hover::before {
+  width: 160%;
+}
+
+.footer-button-container > button > a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Basic";
+  letter-spacing: 1.5px;
+  transition: all 0.3s linear;
+}
+
+.footer-button-container:hover button > a {
+  color: #fff;
+}

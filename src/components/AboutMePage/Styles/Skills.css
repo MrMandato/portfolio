@@ -1,0 +1,15 @@
+.tools-container {
+  display: flex;
+  margin: -300px 200px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 400px;
+}
+
+.sep {
+  border: 2px solid #ccc;
+  height: 670px;
+  margin: 0 20px;
+}
