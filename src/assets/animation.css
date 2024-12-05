@@ -106,7 +106,7 @@
 .slide-in-left-view {
   animation: slideInLeftView linear both;
   animation-timeline: view();
-  animation-range: entry 30% cover 40%;
+  animation-range: entry 20% cover 30%;
 }
 
 @keyframes slideInBottomView {

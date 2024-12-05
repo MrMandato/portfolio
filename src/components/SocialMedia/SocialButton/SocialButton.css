@@ -1,0 +1,19 @@
+.social-button-container {
+  position: relative;
+  display: flex;
+  background-color: #291838;
+  align-items: center;
+  justify-content: center;
+  margin: 0 600px;
+  gap: 40px;
+  top: 42px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.social-button-container > p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+}

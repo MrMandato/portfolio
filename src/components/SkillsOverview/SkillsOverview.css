@@ -1,0 +1,12 @@
+.skills-overview-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -400px 200px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 400px;
+  justify-content: center;
+  gap: 20px;
+}
