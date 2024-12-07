@@ -8,6 +8,7 @@
 
 .text-container {
   text-align: center;
+  margin-top: -30px;
 }
 
 .text-container > h1 {
@@ -26,7 +27,7 @@
 
 .text-container > h3 {
   font-family: "Montserrat";
-  font-size: 1.8;
+  font-size: 1.8rem;
   color: #00000082;
 }
 
@@ -59,4 +60,21 @@
   height: 389px;
   background-color: #fff;
   opacity: 0.5;
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .text-container {
+    margin-top: -30px;
+  }
+  .text-container > h1 {
+    font-size: 3.4rem;
+  }
+  .text-container > h2 {
+    font-size: 1.9rem;
+  }
+  .text-container > h3 {
+    font-size: 1.3rem;
+  }
 }

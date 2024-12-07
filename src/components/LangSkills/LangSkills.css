@@ -25,10 +25,16 @@
 /* Diseño Responsive Laptops  */
 
 @media (min-width: 1020px) and (max-width: 1440px) {
-  .lang-skills-container {
-    margin-top: 190px;
-  }
   .lang-skills-container > h2 {
     font-size: 1.7rem;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .lang-skills-container > h2 {
+    font-size: 1.4rem;
+    text-align: center;
   }
 }

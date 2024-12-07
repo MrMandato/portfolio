@@ -35,7 +35,7 @@ const SkillsOverview = () => {
 
   return (
     <>
-      <div className="skills-overview-container slide-in-bottom-view">
+      <div className="skills-overview-container">
         {data.map((item, index) => (
           <SkillsItem
             key={index}

@@ -2,33 +2,41 @@
 import images from "../../assets/images";
 // Styles
 import "./NavBar.css";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <>
-      <header id="home" className="container">
-        <a href="#" className="logo-container slide-in-top">
-          <img src={images.Isologo} alt="Isologo" />
+    <header id="home" className="container">
+      <a href="#" className="isologo-container slide-in-top">
+        <img src={images.Isologo} alt="Isologo" />
+      </a>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
+      <nav className={`navbar-container ${isMenuOpen ? "navbar-open" : ""}`}>
+        <a href="#home" onClick={() => setIsMenuOpen(false)}>
+          <button className="btn">Inicio</button>
         </a>
-        <nav className="navbar-container slide-in-left">
-          <a href="#home">
-            <button className="btn"> Inicio</button>
-          </a>
-          <a href="#about">
-            <button className="btn"> Sobre Mí</button>
-          </a>
-          <a href="#projects">
-            <button className="btn"> Proyectos</button>
-          </a>
-          <a href="#testimonials">
-            <button className="btn"> Testimonios</button>
-          </a>
-          <a href="#contact">
-            <button className="btn"> Contacto</button>
-          </a>
-        </nav>
-      </header>
-    </>
+        <a href="#about" onClick={() => setIsMenuOpen(false)}>
+          <button className="btn">Sobre Mí</button>
+        </a>
+        <a href="#projects" onClick={() => setIsMenuOpen(false)}>
+          <button className="btn">Proyectos</button>
+        </a>
+        <a href="#testimonials" onClick={() => setIsMenuOpen(false)}>
+          <button className="btn">Testimonios</button>
+        </a>
+        <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+          <button className="btn">Contacto</button>
+        </a>
+      </nav>
+    </header>
   );
 };
 

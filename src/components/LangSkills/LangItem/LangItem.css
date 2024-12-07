@@ -2,3 +2,12 @@
   font-size: 4rem;
   padding: 10px 15px;
 }
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .icon {
+    font-size: 3rem;
+    width: 12%;
+  }
+}

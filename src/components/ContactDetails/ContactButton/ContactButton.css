@@ -51,3 +51,22 @@
   font-size: 1.2rem;
   transition: all 0.5s;
 }
+
+/* Diseños Responsive Tablet  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-btn {
+    padding: 10px 30px;
+  }
+  .contact-btn > a {
+    font-size: 1rem;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .contact-btn {
+    padding: 10px 50px;
+  }
+}

@@ -13,7 +13,7 @@ const SkillsItem = ({
 }) => {
   return (
     <>
-      <div className="card">
+      <div className="card slide-in-bottom-view">
         {" "}
         <div className="card-icon">
           {" "}

@@ -3,6 +3,10 @@
   margin-top: 40px;
   background-color: #4d73dc;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-media-container h2 {

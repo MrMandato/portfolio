@@ -46,3 +46,15 @@
 .image-container:hover .overlay {
   opacity: 1;
 }
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .image-container > img {
+    width: 90%;
+  }
+  .overlay {
+    width: 89%;
+    left: 23px;
+  }
+}

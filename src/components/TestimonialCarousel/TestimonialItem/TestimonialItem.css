@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 25px 0;
 }
 
@@ -14,6 +15,7 @@
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
   margin: auto;
+  display: flex;
 }
 
 .swiper-slide {
@@ -59,4 +61,54 @@
   font-family: "Montserrat";
   color: #777;
   text-align: center;
+  width: 600px;
+}
+
+/* Diseños Responsive Laptop  */
+
+@media (min-width: 1020px) and (max-width: 1440px) {
+  .swiper {
+    width: 80%;
+  }
+}
+
+/* Diseños Responsive Tablet  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .swiper {
+    width: 90%;
+  }
+  .swiper-slide {
+    margin-left: 0px;
+  }
+  .testimonial-slide h3 {
+    font-size: 40px;
+  }
+  .testimonial-slide p {
+    font-size: 18px;
+    margin-left: -25px;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .swiper {
+    width: 95%;
+  }
+  .swiper-slide img {
+    width: 100px;
+    height: 100px;
+    margin-left: -20px;
+    margin-bottom: 15px;
+  }
+  .swiper-slide h3 {
+    font-size: 30px;
+    margin-left: -40px;
+  }
+  .swiper-slide p {
+    font-size: 18px;
+    width: 400px;
+    margin-left: -40px;
+  }
 }

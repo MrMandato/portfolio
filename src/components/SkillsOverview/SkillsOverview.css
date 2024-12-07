@@ -10,3 +10,31 @@
   justify-content: center;
   gap: 20px;
 }
+
+/* Diseños Responsive Laptop  */
+
+@media (min-width: 1020px) and (max-width: 1440px) {
+  .skills-overview-container {
+    top: 400px;
+  }
+}
+
+/* Diseños Responsive Tablet  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-overview-container {
+    box-shadow: none;
+    right: 25px;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .skills-overview-container {
+    box-shadow: none;
+    margin: -400px 50px;
+    position: relative;
+    right: 28px;
+  }
+}

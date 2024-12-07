@@ -45,3 +45,11 @@
 .media-container:hover .fa-brands {
   color: #fff;
 }
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .media-container {
+    margin: 0 8px 30px 5px;
+  }
+}

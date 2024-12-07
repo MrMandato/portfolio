@@ -66,3 +66,11 @@
   font-weight: 500;
   color: #898686;
 }
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .copyright-container p {
+    font-size: 1.5rem;
+  }
+}
