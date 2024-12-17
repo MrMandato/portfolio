@@ -3,7 +3,6 @@ import { useState } from "react";
 import images from "../../assets/images";
 // Styles
 import "./NavBar.css";
-import React from "react";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);

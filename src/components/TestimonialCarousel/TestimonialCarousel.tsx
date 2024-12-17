@@ -1,5 +1,4 @@
 // Components
-import React from "react";
 import TestimonialItem from "./TestimonialItem/TestimonialItem";
 
 const TestimonialCarousel = () => {

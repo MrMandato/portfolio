@@ -1,4 +1,3 @@
-import React from "react";
 // Layout
 import Header from "./layout/Header";
 import Main from "./layout/Main";

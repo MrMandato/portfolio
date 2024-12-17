@@ -1,4 +1,3 @@
-import React from "react";
 // Images
 import images from "../../assets/images";
 // Style

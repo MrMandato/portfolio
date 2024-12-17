@@ -1,4 +1,3 @@
-import React from "react";
 // Components
 import NavBar from "../components/NavBar/Navbar";
 import Profile from "../components/Profile/Profile";
