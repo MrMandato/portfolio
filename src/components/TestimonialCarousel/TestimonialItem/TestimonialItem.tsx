@@ -3,8 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Lib Styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 // Lib Modules
 import { Navigation, Autoplay } from "swiper/modules";
 // Styles
