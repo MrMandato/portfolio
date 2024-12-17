@@ -1,0 +1,25 @@
+.social-media-container {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #4d73dc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-container h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  font-family: "Basic";
+  padding-top: 25px;
+}
+
+.my-social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}

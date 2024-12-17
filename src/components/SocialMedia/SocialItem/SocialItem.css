@@ -1,0 +1,55 @@
+.media-container {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 30px 15px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.media-container::before {
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  background-color: #4d73dc;
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: all 0.3s linear;
+  z-index: -1;
+}
+
+.media-container:hover::before {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.media-container > a {
+  text-decoration: none;
+}
+
+.media-container > a > span {
+  font-size: 2.5rem;
+  color: #000;
+  transition: color 0.3s linear;
+}
+
+.media-container:hover .fa-brands {
+  color: #fff;
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .media-container {
+    margin: 0 8px 30px 5px;
+  }
+}

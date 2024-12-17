@@ -1,0 +1,77 @@
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 10px;
+}
+.card-icon {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 3px solid #a9acaf;
+}
+.card-icon .fa-solid {
+  font-size: 2.2em;
+  color: #222;
+}
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card-header h2 {
+  margin: 0;
+  font-size: 2em;
+  color: #222;
+  font-family: "Basic";
+  letter-spacing: 1px;
+}
+.card-header p {
+  margin: 10px 0 0 0;
+  color: #666;
+  font-family: "Montserrat";
+  font-size: 1.1em;
+}
+.card-body {
+  width: 100%;
+  text-align: center;
+}
+.card-body h3 {
+  margin: 20px 0 10px;
+  font-size: 1.6em;
+  color: #222;
+  font-family: "Oswald";
+  letter-spacing: 1.5px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.tag {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .skills-overview-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

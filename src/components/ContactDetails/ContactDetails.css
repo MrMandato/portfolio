@@ -1,0 +1,58 @@
+.contact-details-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-details-container > h2 {
+  font-size: 2.2rem;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  color: #4d73dc;
+}
+
+.personal-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 150px;
+}
+
+.logo-container > img {
+  width: 250px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Diseños Responsive Tablet  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .personal-information {
+    gap: 20px;
+  }
+  .logo-container > img {
+    width: 150px;
+    margin-top: 80px;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .personal-information {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .logo-container > img {
+    width: 200px;
+  }
+}

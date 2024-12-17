@@ -1,0 +1,40 @@
+.skills-overview-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -400px 200px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 5px 7px 15px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 400px;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Diseños Responsive Laptop  */
+
+@media (min-width: 1020px) and (max-width: 1440px) {
+  .skills-overview-container {
+    top: 400px;
+  }
+}
+
+/* Diseños Responsive Tablet  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-overview-container {
+    box-shadow: none;
+    right: 25px;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .skills-overview-container {
+    box-shadow: none;
+    margin: -400px 50px;
+    position: relative;
+    right: 28px;
+  }
+}

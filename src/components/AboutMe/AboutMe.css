@@ -1,0 +1,62 @@
+#about {
+  margin: 116px 0 0px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #4d73dc;
+  flex-direction: column;
+  height: 630px;
+}
+
+.welcome-container {
+  background-color: #99afec;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -50px;
+  width: 65%;
+  max-width: 800px;
+}
+
+.welcome-container > h2 {
+  font-family: "Oswald";
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.welcome-container > p {
+  font-family: "Basic";
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Diseños Responsive Tablet  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .welcome-container {
+    width: 80%;
+  }
+  .welcome-container > h2 {
+    font-size: 2.5rem;
+  }
+  .welcome-container > p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .welcome-container {
+    width: 85%;
+  }
+  .welcome-container > h2 {
+    font-size: 2rem;
+  }
+  .welcome-container > p {
+    font-size: 1.1rem;
+  }
+}

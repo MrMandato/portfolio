@@ -1,0 +1,80 @@
+.profile-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -380px;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.text-container > h1 {
+  font-family: "Basic";
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.text-container h2 {
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.text-container > h3 {
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  color: #00000082;
+}
+
+.profile-image-container {
+  margin-top: 50px;
+  position: absolute;
+  top: 180px;
+}
+
+.profile-image-container > img {
+  width: 300px;
+}
+
+.background-container {
+  background-image: url(../../assets/images/Background.jpg);
+  background-size: cover;
+  height: 389px;
+  width: 100%;
+  position: absolute;
+  top: 380px;
+  z-index: -1;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 389px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .text-container {
+    margin-top: -30px;
+  }
+  .text-container > h1 {
+    font-size: 3.4rem;
+  }
+  .text-container > h2 {
+    font-size: 1.9rem;
+  }
+  .text-container > h3 {
+    font-size: 1.3rem;
+  }
+}

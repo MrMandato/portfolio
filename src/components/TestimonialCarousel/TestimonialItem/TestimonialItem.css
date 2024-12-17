@@ -1,0 +1,114 @@
+.testimonials-container {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 0;
+}
+
+.swiper {
+  width: 60%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  margin: auto;
+  display: flex;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.swiper-slide img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.testimonial-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -150px;
+  text-align: center;
+}
+
+.testimonial-slide h3 {
+  margin-top: 5px;
+  color: #333;
+  font-family: "Basic";
+  font-size: 50px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.testimonial-slide p {
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: #777;
+  text-align: center;
+  width: 600px;
+}
+
+/* Diseños Responsive Laptop  */
+
+@media (min-width: 1020px) and (max-width: 1440px) {
+  .swiper {
+    width: 80%;
+  }
+}
+
+/* Diseños Responsive Tablet  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .swiper {
+    width: 90%;
+  }
+  .swiper-slide {
+    margin-left: 0px;
+  }
+  .testimonial-slide h3 {
+    font-size: 40px;
+  }
+  .testimonial-slide p {
+    font-size: 18px;
+    margin-left: -25px;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .swiper {
+    width: 95%;
+  }
+  .swiper-slide img {
+    width: 100px;
+    height: 100px;
+    margin-left: -20px;
+    margin-bottom: 15px;
+  }
+  .swiper-slide h3 {
+    font-size: 30px;
+    margin-left: -40px;
+  }
+  .swiper-slide p {
+    font-size: 18px;
+    width: 400px;
+    margin-left: -40px;
+  }
+}

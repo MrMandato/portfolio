@@ -1,0 +1,44 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.input > h3 {
+  color: #6d6c6c;
+  font-family: "Oswald";
+  text-align: center;
+}
+
+.input > h2 {
+  text-align: center;
+  color: #222;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 7px 10px 7px 0px rgba(0, 0, 0, 0.4);
+  margin-top: 0;
+}
+
+/* Diseños Responsive Tablet  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .input > h3 {
+    font-size: 1.2rem;
+  }
+  .input > h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .input > h3 {
+    font-size: 1.1rem;
+  }
+  .input > h2 {
+    font-size: 1rem;
+  }
+}

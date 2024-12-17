@@ -1,0 +1,61 @@
+.custom-button {
+  background-color: #fff;
+  padding: 15px 45px;
+  border: 2px solid #222;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.custom-button:hover > a {
+  color: #fff;
+}
+
+.custom-button:hover > i {
+  color: #fff;
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #4d73dc;
+  z-index: -1;
+  transition: all 1s ease;
+}
+
+.custom-button:hover::before {
+  width: 160%;
+}
+
+.custom-button > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+  font-family: "Basic";
+}
+
+.custom-button > i {
+  font-size: 1.2rem;
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+
+/* Estilos Responsive para Telefonos  */
+
+@media (max-width: 767px) {
+  .custom-button {
+    padding: 5px 0px;
+    width: 220px;
+    text-align: center;
+  }
+  .custom-button > a {
+    font-size: 1.2rem;
+  }
+}
