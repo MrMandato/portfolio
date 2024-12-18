@@ -20,7 +20,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
     <div className="project-image-container">
       {projectList.map((project, index) => (
         <div key={index} className="image-container slide-in-top-view">
-          <img src={images[project]} alt={project} />
+          <img src={images[project]} />
           <div className="overlay">
             <p>{descriptions[index]}</p>
             <CustomButton
