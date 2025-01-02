@@ -3,12 +3,7 @@
 ## Proyectos
 ### Mi Portafolio
 Este es mi portafolio para guardar todos los proyectos que realizo
-Lista de Tecnologias: 
-*HTML
-*CSS
-*JavaScript
-*React
-*TypeScript
+Lista de Tecnologias: HTML, CSS, JavaScript, React, TypeScript
 ## Contacto
 ### Correo: 1707orlandoalex@gmail.com
 ### Telefono: +58 424 286 0846
