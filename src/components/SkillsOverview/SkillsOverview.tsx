@@ -1,7 +1,11 @@
-import React from "react";
 // Styles
-import SkillsItem from "./SkillsItem/SkillsItem";
 import "./SkillsOverview.css";
+// Components
+import SkillsItem from "./SkillsItem/SkillsItem";
+// Hooks
+import { useIntersection } from "../../hooks/useIntersection";
+// Animations
+import "../../animations/animations.css";
 
 interface Skill {
   icon: string;
@@ -43,8 +47,17 @@ const SkillsOverview: React.FC = () => {
     },
   ];
 
+  const { targetRef, isIntersecting } = useIntersection({ threshold: 0.2 });
+
+  const animation = "fade-in-bottom";
+
   return (
-    <div className="skills-overview-container">
+    <div
+      ref={targetRef as React.RefObject<HTMLDivElement>}
+      className={`skills-overview-container ${
+        isIntersecting ? animation : "opacity-min"
+      }`}
+    >
       {data.map((item, index) => (
         <SkillsItem
           key={index}

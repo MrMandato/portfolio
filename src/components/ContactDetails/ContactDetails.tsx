@@ -6,6 +6,10 @@ import images from "../../assets/images";
 // Items
 import ContactItem from "./ContactItem/ContactItem";
 import ContactButton from "./ContactButton/ContactButton";
+// Hooks
+import { useIntersection } from "../../hooks/useIntersection";
+// Animations
+import "../../animations/animations.css";
 
 const ContactDetails: React.FC = () => {
   const field: string[] = ["Mi Correo Electronico", "Mi Numero de Telefono"];
@@ -14,12 +18,24 @@ const ContactDetails: React.FC = () => {
   const buttonLinks: string[] = ["#", "mailto:1707orlandoalex@gmail.com"];
   const buttonTexts: string[] = ["Descargar CV", "Enviar un Correo"];
 
+  const { targetRef, isIntersecting } = useIntersection({ threshold: 0.5 });
+
+  const animations = ["fade-in-top", "slide-in-left"];
+
   return (
-    <section id="contact" className="contact-details-container">
-      <h2 className="slide-in-left-view">
+    <section
+      id="contact"
+      className="contact-details-container"
+      ref={targetRef as React.RefObject<HTMLDivElement>}
+    >
+      <h2 className={isIntersecting ? animations[0] : "opacity-min"}>
         Contactame para hacer realidad tus ideas
       </h2>
-      <div className="personal-information zoom-in">
+      <div
+        className={`personal-information ${
+          isIntersecting ? animations[1] : "opacity-min"
+        }`}
+      >
         <picture className="logo-container">
           <img src={images.Logo} alt="Logo" />
         </picture>

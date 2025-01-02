@@ -3,6 +3,10 @@ import { useState } from "react";
 import images from "../../assets/images";
 // Styles
 import "./NavBar.css";
+// Hooks
+import { useIntersection } from "../../hooks/useIntersection";
+// Animations
+import "../../animations/animations.css";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -11,18 +15,35 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const { targetRef, isIntersecting } = useIntersection({ threshold: 0.5 });
+
+  const animation = "slide-in-top";
+
   return (
-    <header id="home" className="container">
-      <a href="#" className="isologo-container slide-in-top">
-        <img src={images.Isologo} alt="Isologo" />
+    <header
+      id="home"
+      className="container"
+      ref={targetRef as React.RefObject<HTMLDivElement>}
+    >
+      <a href="#" className="isologo-container">
+        <img
+          src={images.Isologo}
+          alt="Isologo"
+          className={`${isIntersecting ? `${animation}` : "opacity-min"}`}
+        />
       </a>
-      <button className="menu-toggle" onClick={toggleMenu}>
+      <button
+        className={`menu-toggle ${
+          isIntersecting ? `${animation}` : "opacity-min"
+        }`}
+        onClick={toggleMenu}
+      >
         ☰
       </button>
       <nav
-        className={`navbar-container slide-in-top ${
-          isMenuOpen ? "navbar-open" : ""
-        }`}
+        className={`navbar-container ${
+          isIntersecting ? `${animation}` : "opacity-min"
+        } ${isMenuOpen ? "navbar-open" : ""}`}
       >
         <a href="#home" onClick={() => setIsMenuOpen(false)}>
           <button className="btn">Inicio</button>

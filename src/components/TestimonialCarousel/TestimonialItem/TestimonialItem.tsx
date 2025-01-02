@@ -11,6 +11,10 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "./TestimonialItem.css";
 // Images
 import images from "../../../assets/images";
+// Hooks
+import { useIntersection } from "../../../hooks/useIntersection";
+// Animations
+import "../../../animations/animations.css";
 
 interface TestimonialItemProps {
   testimonials: string[];
@@ -23,8 +27,18 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({
   person,
   feedback,
 }) => {
+  const { targetRef, isIntersecting } = useIntersection({ threshold: 0.5 });
+
+  const animation = "fade-in-left";
+
   return (
-    <aside id="testimonials" className="testimonials-container">
+    <aside
+      id="testimonials"
+      ref={targetRef as React.RefObject<HTMLDivElement>}
+      className={`testimonials-container ${
+        isIntersecting ? animation : "opacity-min"
+      }`}
+    >
       <Swiper
         slidesPerView={1}
         spaceBetween={30}

@@ -4,6 +4,10 @@ import "./SocialMedia.css";
 // Items
 import SocialItem from "./SocialItem/SocialItem";
 import SocialButton from "./SocialButton/SocialButton";
+// Hooks
+import { useIntersection } from "../../hooks/useIntersection";
+// Animations
+import "../../animations/animations.css";
 
 const SocialMedia: React.FC = () => {
   const icons: string[] = [
@@ -22,11 +26,22 @@ const SocialMedia: React.FC = () => {
     "https://www.telegram.com",
   ];
 
+  const { targetRef, isIntersecting } = useIntersection({ threshold: 0.5 });
+
+  const animation = "fade-in-bottom";
+
   return (
     <>
-      <aside className="social-media-container">
-        <h2 className="scroll-anim">Mis Redes Sociales</h2>
-        <div className="my-social-media slide-in-bottom-view">
+      <aside
+        className="social-media-container"
+        ref={targetRef as React.RefObject<HTMLDivElement>}
+      >
+        <h2>Mis Redes Sociales</h2>
+        <div
+          className={`my-social-media ${
+            isIntersecting ? animation : "opacity-0"
+          }`}
+        >
           <SocialItem iconNames={icons} link={links} />
         </div>
         <SocialButton />

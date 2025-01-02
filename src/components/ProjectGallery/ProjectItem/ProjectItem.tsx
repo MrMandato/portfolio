@@ -1,4 +1,3 @@
-// ProjectItem.tsx
 import React from "react";
 // Styles
 import "./ProjectItem.css";
@@ -6,6 +5,10 @@ import "./ProjectItem.css";
 import images from "../../../assets/images";
 // Commons
 import CustomButton from "../../../common/CustomButton/CustomButton";
+// Hooks
+import { useIntersection } from "../../../hooks/useIntersection";
+// Animations
+import "../../../animations/animations.css";
 
 interface ProjectItemProps {
   projectList: (keyof typeof images)[];
@@ -16,11 +19,23 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   projectList,
   descriptions,
 }) => {
+  const { targetRef, isIntersecting } = useIntersection({ threshold: 0.3 });
+
+  const animation = "bounce-in";
+
   return (
-    <div className="project-image-container">
+    <div
+      className={`project-image-container`}
+      ref={targetRef as React.RefObject<HTMLDivElement>}
+    >
       {projectList.map((project, index) => (
-        <div key={index} className="image-container slide-in-top-view">
-          <img src={images[project]} />
+        <div
+          key={index}
+          className={`image-container ${
+            isIntersecting ? animation : "opacity-min"
+          }`}
+        >
+          <img src={images[project]} alt={`Project ${index + 1}`} />
           <div className="overlay">
             <p>{descriptions[index]}</p>
             <CustomButton
